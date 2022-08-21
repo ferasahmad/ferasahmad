@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import Hero from "../components/Hero";
 
-const Home: NextPage = () => {
+const Main: NextPage = () => {
   return (
     <Container>
       <Head>
@@ -69,4 +69,4 @@ const Container = styled.div`
   min-height: 100%;
 `;
 
-export default Home;
+export default Main;
