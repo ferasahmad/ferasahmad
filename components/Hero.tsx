@@ -14,11 +14,10 @@ const Container = styled.div`
 `;
 
 const H1 = styled.h1`
-  font-family: Zerovelo;
+  font-family: Collects;
   font-size: 35px;
   letter-spacing: 25px;
   margin: 10px 0;
-  color: black;
 `;
 
 const H4 = styled.h4`

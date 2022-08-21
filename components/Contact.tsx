@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 const Contact: NextPage = () => {
-  return <Container></Container>;
+  return <Container>Contact</Container>;
 };
 
 export default Contact;

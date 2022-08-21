@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 const Experience: NextPage = () => {
-  return <Container></Container>;
+  return <Container>Experience</Container>;
 };
 
 export default Experience;

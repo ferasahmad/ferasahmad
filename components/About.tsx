@@ -10,7 +10,7 @@ const Container = styled.div`
 `;
 
 const About: NextPage = () => {
-  return <Container></Container>;
+  return <Container>About</Container>;
 };
 
 export default About;
