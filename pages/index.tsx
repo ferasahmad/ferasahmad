@@ -37,7 +37,6 @@ const VideoBackground = styled.video`
   z-index: -1;
   object-fit: cover;
   filter: brightness(60%);
-  background: black;
 `;
 
 const Container = styled.div`

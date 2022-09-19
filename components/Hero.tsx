@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import type { NextPage } from "next";
 import FadeInElement from "./FadeInElement";
 
-const Home: NextPage = () => {
+const Hero: NextPage = () => {
   return (
     <>
       <Container>
@@ -39,4 +39,4 @@ const H4 = styled.h4`
   margin: 10px 0;
 `;
 
-export default Home;
+export default Hero;
