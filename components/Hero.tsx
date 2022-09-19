@@ -1,13 +1,19 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
 import type { NextPage } from "next";
+import FadeInElement from "./FadeInElement";
 
 const Home: NextPage = () => {
   return (
-    <Container>
-      <H1>FERAS AHMAD</H1>
-      <H4>SOFTWARE ENGINEER</H4>
-    </Container>
+    <>
+      <Container>
+        <FadeInElement duration={3}>
+          <H1>FERAS AHMAD</H1>
+        </FadeInElement>
+        <FadeInElement duration={5}>
+          <H4>SOFTWARE ENGINEER</H4>
+        </FadeInElement>
+      </Container>
+    </>
   );
 };
 
@@ -31,17 +37,6 @@ const H1 = styled.h1`
 const H4 = styled.h4`
   letter-spacing: 25px;
   margin: 10px 0;
-`;
-
-const VideoBackground = styled.video`
-  width: 100%;
-  height: 100%;
-  float: left;
-  padding: none;
-  position: fixed;
-  z-index: -1;
-  object-fit: cover;
-  filter: brightness(60%);
 `;
 
 export default Home;

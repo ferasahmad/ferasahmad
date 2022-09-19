@@ -5,21 +5,26 @@ import About from "../components/About";
 
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
+import FadeInElement from "../components/FadeInElement";
 import Hero from "../components/Hero";
 
 const Main: NextPage = () => {
   return (
-    <Container>
-      <VideoBackground src={"/video.mp4"} autoPlay loop muted />
+    <>
       <Head>
         <title>Feras Ahmad</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero />
-      <About />
-      <Experience />
-      <Contact />
-    </Container>
+      <VideoBackground src={"/video.mp4"} autoPlay loop muted />
+      <FadeInElement>
+        <Container>
+          <Hero />
+          <About />
+          <Experience />
+          <Contact />
+        </Container>
+      </FadeInElement>
+    </>
   );
 };
 
@@ -32,6 +37,7 @@ const VideoBackground = styled.video`
   z-index: -1;
   object-fit: cover;
   filter: brightness(60%);
+  background: black;
 `;
 
 const Container = styled.div`
@@ -54,7 +60,6 @@ const Container = styled.div`
   }
 
   font-family: DMS Sans;
-  min-height: 100%;
 `;
 
 export default Main;
