@@ -10,6 +10,7 @@ import Hero from "../components/Hero";
 const Main: NextPage = () => {
   return (
     <Container>
+      <VideoBackground src={"/video.mp4"} autoPlay loop muted />
       <Head>
         <title>Feras Ahmad</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,31 +23,18 @@ const Main: NextPage = () => {
   );
 };
 
-const Container = styled.div`
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 6%,
-    rgba(0, 0, 0, 0.35480129551820727) 31%,
-    rgba(0, 0, 0, 0.9178265056022409) 67%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 6%,
-    rgba(0, 0, 0, 0.35480129551820727) 31%,
-    rgba(0, 0, 0, 0.9178265056022409) 67%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 6%,
-    rgba(0, 0, 0, 0.35480129551820727) 31%,
-    rgba(0, 0, 0, 0.9178265056022409) 67%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+const VideoBackground = styled.video`
+  width: 100%;
+  height: 100%;
+  float: left;
+  padding: none;
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+  filter: brightness(60%);
+`;
 
+const Container = styled.div`
   @font-face {
     font-family: Collects;
     src: url("/collects.ttf");

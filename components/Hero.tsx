@@ -1,5 +1,15 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 import type { NextPage } from "next";
+
+const Home: NextPage = () => {
+  return (
+    <Container>
+      <H1>FERAS AHMAD</H1>
+      <H4>SOFTWARE ENGINEER</H4>
+    </Container>
+  );
+};
 
 const Container = styled.div`
   height: 100vh;
@@ -8,14 +18,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(transparent, black);
 `;
 
 const H1 = styled.h1`
   font-family: Collects;
-  font-size: 35px;
+  font-size: 60px;
   letter-spacing: 25px;
   margin: 10px 0;
 `;
@@ -35,15 +43,5 @@ const VideoBackground = styled.video`
   object-fit: cover;
   filter: brightness(60%);
 `;
-
-const Home: NextPage = () => {
-  return (
-    <Container>
-      <VideoBackground src={"/video.mp4"} autoPlay loop muted />
-      <H1>FERAS AHMAD</H1>
-      <H4>SOFTWARE ENGINEER</H4>
-    </Container>
-  );
-};
 
 export default Home;
