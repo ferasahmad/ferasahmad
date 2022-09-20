@@ -33,7 +33,7 @@ const Main: NextPage = () => {
 };
 
 const BlackBackground = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: -2;
   width: 100%;
   height: 100%;
