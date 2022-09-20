@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
@@ -15,7 +16,10 @@ const Main: NextPage = () => {
         <title>Feras Ahmad</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <VideoBackground src={"/video.mp4"} autoPlay loop muted />
+      <BlackBackground />
+      <FadeInElement>
+        <VideoBackground src={"/video.mp4"} autoPlay loop muted />
+      </FadeInElement>
       <FadeInElement>
         <Container>
           <Hero />
@@ -27,6 +31,14 @@ const Main: NextPage = () => {
     </>
   );
 };
+
+const BlackBackground = styled.div`
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background: black;
+`;
 
 const VideoBackground = styled.video`
   width: 100%;
