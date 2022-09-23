@@ -1,17 +1,18 @@
 import styled from "@emotion/styled";
 import type { NextPage } from "next";
+import Image from "next/image";
 
 const About: NextPage = () => {
   return (
     <Container>
       <div />
+      <Image src="/me2.png" height={450} width={410} />
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </Text>
-      <TechnologiesContainer />
       <div />
     </Container>
   );

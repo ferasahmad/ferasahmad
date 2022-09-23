@@ -8,6 +8,7 @@ import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import FadeInElement from "../components/FadeInElement";
 import Hero from "../components/Hero";
+import Tech from "../components/Tech";
 
 const Main: NextPage = () => {
   return (
@@ -24,8 +25,9 @@ const Main: NextPage = () => {
         <Container>
           <Hero />
           <About />
-          <Experience />
-          <Contact />
+          <Tech />
+          {/* <Experience />
+          <Contact /> */}
         </Container>
       </FadeInElement>
     </>
