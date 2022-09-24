@@ -5,9 +5,9 @@ import About from "../components/About";
 
 import Contact from "../components/Contact";
 import Experience from "../components/Experience";
-import FadeInElement from "../components/FadeInElement";
+import FadeInElement from "../components/animations/FadeInElement";
 import Hero from "../components/Hero";
-import ScrollProgress from "../components/ScrollProgress";
+import ScrollProgress from "../components/animations/ScrollProgress";
 import Tech from "../components/Tech";
 
 const Main: NextPage = () => {

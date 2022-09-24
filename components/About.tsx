@@ -1,18 +1,25 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Image from "next/image";
+import AnimateOnScroll from "./animations/AnimateOnScroll";
 
 const About: NextPage = () => {
   return (
     <Container>
       <div />
-      <Image src="/me2.png" height={450} width={410} />
-      <Text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </Text>
+      <AnimateOnScroll duration={2}>
+        <Image src="/me2.png" height={450} width={410} />
+      </AnimateOnScroll>
+      <AnimateOnScroll duration={3}>
+        <Text>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </Text>
+      </AnimateOnScroll>
+
       <div />
     </Container>
   );
