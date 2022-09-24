@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
@@ -8,6 +7,7 @@ import Contact from "../components/Contact";
 import Experience from "../components/Experience";
 import FadeInElement from "../components/FadeInElement";
 import Hero from "../components/Hero";
+import ScrollProgress from "../components/ScrollProgress";
 import Tech from "../components/Tech";
 
 const Main: NextPage = () => {
@@ -18,6 +18,7 @@ const Main: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BlackBackground />
+      <ScrollProgress />
       <FadeInElement>
         <VideoBackground src={"/video.mp4"} autoPlay loop muted />
       </FadeInElement>

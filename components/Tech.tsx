@@ -3,13 +3,13 @@ import type { NextPage } from "next";
 import Image from "next/image";
 
 const Tech: NextPage = () => {
+  const technologies = ["html", "css", "github", "next", "react", "typescript"];
+
   return (
     <Container>
-      <Item imagePath="/html.png" />
-      <Item imagePath="/css.png" />
-      <Item imagePath="/github.png" />
-      <Item imagePath="/next.png" />
-      <Item imagePath="/react.png" />
+      {technologies.map((tech) => (
+        <Item key={tech} imagePath={`/${tech}.png`} />
+      ))}
     </Container>
   );
 };
@@ -24,7 +24,6 @@ const Item = ({ imagePath }: { imagePath: string }) => {
 
 const Container = styled.div`
   height: 250px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -20,7 +20,6 @@ const About: NextPage = () => {
 
 const Container = styled.div`
   height: 700px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -33,6 +32,7 @@ const Text = styled.p`
   max-width: 400px;
   font-size: 20px;
   line-height: 45px;
+  background-clip: text;
 `;
 
 const TechnologiesContainer = styled.div`
