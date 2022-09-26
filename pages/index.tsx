@@ -1,14 +1,14 @@
 import styled from "@emotion/styled";
 import type { NextPage } from "next";
 import Head from "next/head";
-import About from "../components/About";
+import About from "../components/sections/About";
 
-import Contact from "../components/Contact";
-import Experience from "../components/Experience";
+import Contact from "../components/sections/Contact";
+import Experience from "../components/sections/Experience";
 import FadeInElement from "../components/animations/FadeInElement";
-import Hero from "../components/Hero";
+import Hero from "../components/sections/Hero";
 import ScrollProgress from "../components/animations/ScrollProgress";
-import Tech from "../components/Tech";
+import Tech from "../components/sections/Tech";
 
 const Main: NextPage = () => {
   return (

@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import type { NextPage } from "next";
-import FadeInElement from "./animations/FadeInElement";
+import FadeInElement from "../animations/FadeInElement";
 
 const Hero: NextPage = () => {
   return (

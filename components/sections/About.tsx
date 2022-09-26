@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Image from "next/image";
-import AnimateOnScroll from "./animations/AnimateOnScroll";
+import AnimateOnScroll from "../animations/AnimateOnScroll";
 
 const About: NextPage = () => {
   return (

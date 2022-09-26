@@ -1,16 +1,21 @@
 import styled from "@emotion/styled";
 import type { NextPage } from "next";
 import Image from "next/image";
-import { useState } from "react";
-import AnimateOnScroll from "./animations/AnimateOnScroll";
+import AnimateOnScroll from "../animations/AnimateOnScroll";
 
 const Tech: NextPage = () => {
   const technologies = ["html", "css", "github", "next", "react", "typescript"];
+  let duration = 2;
 
   return (
     <Container>
       {technologies.map((tech) => {
-        return <Item key={tech} imagePath={`/${tech}.png`} />;
+        duration = duration + 0.5;
+        return (
+          <AnimateOnScroll duration={duration} key={tech}>
+            <Item key={tech} imagePath={`/${tech}.png`} />
+          </AnimateOnScroll>
+        );
       })}
     </Container>
   );
