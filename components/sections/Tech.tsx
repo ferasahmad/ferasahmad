@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import type { NextPage } from "next";
 import Image from "next/image";
+import { MOBILE_BREAKPOINT } from "../../constants/styles";
 import AnimateOnScroll from "../animations/AnimateOnScroll";
 
 const Tech: NextPage = () => {
@@ -46,6 +47,11 @@ const IconContainer = styled.div`
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  @media (max-width: ${MOBILE_BREAKPOINT}) {
+    flex-wrap: wrap;
+    height: 50px;
+    padding: 10px;
   }
 `;
 

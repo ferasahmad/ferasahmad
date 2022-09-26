@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Image from "next/image";
+import { MOBILE_BREAKPOINT } from "../../constants/styles";
 import AnimateOnScroll from "../animations/AnimateOnScroll";
 
 const About: NextPage = () => {
@@ -19,8 +19,6 @@ const About: NextPage = () => {
           aliquip ex ea commodo consequat.
         </Text>
       </AnimateOnScroll>
-
-      <div />
     </Container>
   );
 };
@@ -33,6 +31,9 @@ const Container = styled.div`
   padding: 35px;
   position: relative;
   background: black;
+  @media (max-width: ${MOBILE_BREAKPOINT}) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Text = styled.p`
@@ -40,12 +41,6 @@ const Text = styled.p`
   font-size: 20px;
   line-height: 45px;
   background-clip: text;
-`;
-
-const TechnologiesContainer = styled.div`
-  width: 400px;
-  height: 400px;
-  background: gray;
 `;
 
 export default About;
