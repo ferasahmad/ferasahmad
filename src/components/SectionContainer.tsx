@@ -11,7 +11,7 @@ const SectionContainer = ({
 }: SectionContainerProps) => {
   return (
     <section
-      className={`flex items-center justify-center w-full h-screen ${className}`}
+      className={`flex snap-start items-center justify-center w-full h-screen ${className}`}
     >
       {children}
     </section>
