@@ -13,7 +13,7 @@ export default function About() {
       <p className="lg:max-w-[400px] text-justify font-semibold text-2xl lg:text-xl">
         I&apos;m Feras, a Software Engineer based in New Jersey. I build web and
         mobile applications, and outside of work, I enjoy photography, concerts,
-        gaming, and changing the font of my website a hundred times.
+        gaming, and changing my website&apos;s font a hundred times.
       </p>
     </SectionContainer>
   );
