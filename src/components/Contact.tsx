@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import success from "@/lotties/success-animation.json";
+// import success from "@/lotties/success-animation.json";
 import SectionContainer from "./SectionContainer";
 import { isValidEmail } from "@/utilities/helpers";
-import Lottie from "react-lottie";
+// import Lottie from "react-lottie";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -95,7 +95,7 @@ export default function Contact() {
 
           {step === 2 && (
             <>
-              <Lottie
+              {/* <Lottie
                 options={{
                   loop: false,
                   autoplay: true,
@@ -103,7 +103,7 @@ export default function Contact() {
                 }}
                 height={200}
                 width={200}
-              />
+              /> */}
               <p className="text-center lg:text-xl text-xl font-bold">
                 Message sent. Talk to you soon!
               </p>
