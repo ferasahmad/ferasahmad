@@ -6,8 +6,8 @@ import Hero from "@/components/Hero";
 export default function Home() {
   return (
     <div className="snap-y snap-mandatory h-screen overflow-y-scroll bg-black">
-      <Hero />
-      <About />
+      {/* <Hero />
+      <About /> */}
       {/* <Experience /> */}
       <Contact />
     </div>

@@ -60,7 +60,7 @@ export default function Contact() {
           {step === 1 && (
             <>
               <h1 className="text-4xl text-center font-bold m-0">
-                Let&apos;s connect
+                Currently under construction. Send a message!
               </h1>
 
               <div className="relative w-full">
