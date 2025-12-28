@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-[100vh]">
       <div className="flex flex-1 flex-col items-center justify-center bg-[var(--bg-primary)] p-8 md:p-12">
         <div className="relative">
           <div className="relative inline-block">
