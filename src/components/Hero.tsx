@@ -38,19 +38,19 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        {/* <div className="flex text-center w-[400px] items-center justify-between">
+        <div className="flex text-center w-[400px] items-center justify-between">
           <h1 className="text-lg text-black">FERAS AHMAD</h1>
           <p className="text-lg text-black">SOFTWARE ENGINEER</p>
-        </div> */}
-        <div className="text-center items-center justify-between">
+        </div>
+        {/* <div className="text-center items-center justify-between">
           <h1 className="text-sm text-black">CURRENTLY UNAVAILABLE.</h1>
           <p className="text-sm text-black">
             SENDING POSITIVE ENERGY YOUR WAY.
           </p>
-        </div>
+        </div> */}
       </div>
 
-      {/* <div className="relative hidden flex-1 md:block">
+      <div className="relative hidden flex-1 md:block">
         <Image
           src="/images/hero-section/sea.png"
           alt="NYC skyline with boats"
@@ -58,7 +58,7 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-      </div> */}
+      </div>
     </div>
   );
 }
