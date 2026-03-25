@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex h-[100vh]">
-      <div className="flex flex-1 flex-col items-center justify-center bg-[var(--bg-primary)] p-8 md:p-0">
+    <div className="flex h-screen">
+      <div className="flex flex-1 flex-col items-center justify-center bg-bg-primary p-8 md:p-0">
         <div className="relative">
           <div className="relative inline-block">
             <div
-              className="absolute z-0 bg-[var(--accent)] hidden md:block"
+              className="absolute z-0 bg-accent hidden md:block"
               style={{
                 top: "-20px",
                 right: "20px",

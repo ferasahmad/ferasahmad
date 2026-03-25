@@ -45,7 +45,7 @@ export default function Experience() {
   const timelineGradientVertical = `linear-gradient(180deg, ${timelineColors})`;
 
   return (
-    <section className="flex justify-center bg-[var(--bg-primary)] p-8 md:p-12 lg:items-center lg:h-[100vh] lg:p-16 lg:px-32 text-black">
+    <section className="flex justify-center bg-bg-primary p-8 md:p-12 lg:items-center lg:h-screen lg:p-16 lg:px-32 text-black">
       <div className="">
         <h3 className="text-5xl text-black text-left mb-10">EXPERIENCE</h3>
 
