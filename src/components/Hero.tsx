@@ -39,8 +39,8 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex text-center w-[300px] lg:w-[450px] items-center justify-between">
-          <h1 className="text-xl text-black">FERAS AHMAD</h1>
-          <p className="text-xl text-black">SOFTWARE ENGINEER</p>
+          <h1 className="text-xl lg:text-2xl text-black">FERAS AHMAD</h1>
+          <p className="text-xl lg:text-2xl text-black">SOFTWARE ENGINEER</p>
         </div>
       </div>
 
