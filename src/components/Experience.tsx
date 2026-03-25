@@ -7,7 +7,7 @@ const experiences = [
     color: "#0c2375",
     technologies: ["React Native", "React", "TypeScript", "Redux"],
     description:
-      "Led mobile app development for market analytics. Improved performance and scalability while supporting a growing active user base.",
+      "Led development of a React Native mobile app delivering market insights to traders. Focused on performance optimization, state management, and scalable feature design, resulting in strong user growth and app ratings.",
   },
   {
     company: "Scout",
@@ -15,7 +15,7 @@ const experiences = [
     color: "#6e2365",
     technologies: ["React", "TypeScript", "React Native", "Firebase"],
     description:
-      "Built content creator focused analytics tools. Delivered cross-platform features with high uptime and measurable engagement.",
+      "Built web and mobile tools for content creators using React and TypeScript, including analytics features that improved engagement strategies. Helped scale platforms to tens of thousands of daily users with reliable, high-uptime systems.",
   },
   {
     company: "Series",
@@ -23,7 +23,7 @@ const experiences = [
     color: "#69010f",
     technologies: ["Next.js", "TypeScript", "Jest", "Cypress"],
     description:
-      "Developed core features for a banking application catered to businesses.",
+      "Developed a scalable banking platform for SMBs handling billions in transactions annually. Focused on testing infrastructure, automation, and AI-driven tools to streamline workflows for users.",
   },
   {
     company: "Ohara",
@@ -31,7 +31,7 @@ const experiences = [
     color: "#7c3aed",
     technologies: ["Next.js", "TypeScript", "React Native", "Expo"],
     description:
-      "Built core features on an AI-powered platform catered to non-technical users to generate web applications.",
+      "Built core features for an AI-powered app generation platform using Next.js, React Native, and TypeScript, enabling non-technical users to create web apps seamlessly. Drove measurable gains in user adoption, retention, and conversion.",
   },
 ];
 
