@@ -4,14 +4,17 @@ const contactLinks = [
   {
     name: "LINKEDIN",
     url: "https://www.linkedin.com/in/ferasahmad58",
+    className: "border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2]",
   },
   {
     name: "EMAIL",
     url: "mailto:ferasahmad.dev@gmail.com",
+    className: "border-[#EA4335] text-[#EA4335] hover:bg-[#EA4335]",
   },
   {
     name: "GITHUB",
     url: "https://github.com/ferasahmad",
+    className: "border-[#333333] text-[#333333] hover:bg-[#333333]",
   },
 ];
 
@@ -34,7 +37,7 @@ export default function Contact() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 border-2 border-black text-black text-lg md:text-xl font-bold hover:bg-black hover:text-[var(--bg-light)] transition-colors duration-200 min-w-[200px] text-center"
+              className={`px-8 py-4 border-2 text-lg md:text-xl font-bold hover:text-[var(--bg-light)] transition-colors duration-200 min-w-[200px] text-center ${link.className}`}
             >
               {link.name}
             </a>
