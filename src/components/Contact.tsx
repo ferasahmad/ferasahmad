@@ -4,12 +4,12 @@ const contactLinks = [
   {
     name: "LINKEDIN",
     url: "https://www.linkedin.com/in/ferasahmad58",
-    className: "border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2]",
+    className: "border-[#354376] text-[#354376] hover:bg-[#354376]",
   },
   {
     name: "EMAIL",
     url: "mailto:ferasahmad.dev@gmail.com",
-    className: "border-[#EA4335] text-[#EA4335] hover:bg-[#EA4335]",
+    className: "border-[#832C2A] text-[#832C2A] hover:bg-[#832C2A]",
   },
   {
     name: "GITHUB",
