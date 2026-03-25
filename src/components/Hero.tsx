@@ -9,28 +9,28 @@ export default function Hero() {
             <div
               className="absolute z-0 bg-[var(--accent)] hidden md:block"
               style={{
-                top: "-30px",
-                right: "30px",
+                top: "-20px",
+                right: "20px",
                 width: "100%",
                 height: "100%",
                 opacity: 0.3,
               }}
             />
-            <div className="hidden md:block">
-              <Image
-                src="/images/hero-section/ferasahmad.png"
-                alt="Feras Ahmad"
-                width={400}
-                height={600}
-                className="relative z-10 object-contain"
-                priority
-              />
-            </div>
-            <div className="block md:hidden">
+            <div className="block lg:hidden">
               <Image
                 src="/images/hero-section/ferasahmad.png"
                 alt="Feras Ahmad"
                 width={300}
+                height={400}
+                className="relative z-10 object-contain"
+                priority
+              />
+            </div>
+            <div className="hidden lg:block">
+              <Image
+                src="/images/hero-section/ferasahmad.png"
+                alt="Feras Ahmad"
+                width={450}
                 height={600}
                 className="relative z-10 object-contain"
                 priority
@@ -38,9 +38,9 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex text-center w-[300px] items-center justify-between">
-          <h1 className="text-lg text-black">FERAS AHMAD</h1>
-          <p className="text-lg text-black">SOFTWARE ENGINEER</p>
+        <div className="flex text-center w-[300px] lg:w-[450px] items-center justify-between">
+          <h1 className="text-xl text-black">FERAS AHMAD</h1>
+          <p className="text-xl text-black">SOFTWARE ENGINEER</p>
         </div>
       </div>
 

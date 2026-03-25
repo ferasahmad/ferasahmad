@@ -47,9 +47,7 @@ export default function Experience() {
   return (
     <section className="flex justify-center bg-[var(--bg-primary)] p-8 md:p-12 lg:items-center lg:h-[100vh] lg:p-16 lg:px-32 text-black">
       <div className="">
-        <h3 className="text-5xl text-black text-left mb-10">
-          EXPERIENCE
-        </h3>
+        <h3 className="text-5xl text-black text-left mb-10">EXPERIENCE</h3>
 
         <div className="hidden lg:block mb-8 opacity-70">
           <div className="relative">
@@ -76,36 +74,39 @@ export default function Experience() {
             style={{ background: timelineGradientVertical }}
           />
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-16">
-          {experiences.map((exp) => (
-            <article key={`${exp.company}-${exp.period}`} className="min-w-0 relative">
-              <span
-                className="absolute -left-[1.9rem] top-2 h-3 w-3 rounded-full md:hidden"
-                style={{ backgroundColor: exp.color }}
-              />
-              <h4
-                className="text-3xl font-semibold uppercase tracking-wide opacity-70"
-                style={{ color: exp.color }}
+            {experiences.map((exp) => (
+              <article
+                key={`${exp.company}-${exp.period}`}
+                className="min-w-0 relative"
               >
-                {exp.company}
-              </h4>
-              <p className="mt-1 text-md uppercase tracking-widest opacity-70">
-                {exp.period}
-              </p>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {exp.technologies.map((tech) => (
-                  <span
-                    key={`${exp.company}-${exp.period}-${tech}`}
-                    className=" border border-black/20 bg-black/5 px-3 py-1 text-xs font-medium tracking-wide"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <p className="mt-4 text-2xl text-black leading-6">
-                {exp.description}
-              </p>
-            </article>
-          ))}
+                <span
+                  className="absolute -left-[1.9rem] top-2 h-3 w-3 rounded-full md:hidden"
+                  style={{ backgroundColor: exp.color }}
+                />
+                <h4
+                  className="text-4xl font-semibold uppercase tracking-wide opacity-70"
+                  style={{ color: exp.color }}
+                >
+                  {exp.company}
+                </h4>
+                <p className="mt-1 text-md uppercase tracking-widest opacity-70">
+                  {exp.period}
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {exp.technologies.map((tech) => (
+                    <span
+                      key={`${exp.company}-${exp.period}-${tech}`}
+                      className=" border border-black/20 bg-black/5 px-3 py-1 text-xs font-medium tracking-wide"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <p className="mt-4 text-2xl text-black leading-6">
+                  {exp.description}
+                </p>
+              </article>
+            ))}
           </div>
         </div>
       </div>
