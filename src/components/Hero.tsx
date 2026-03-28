@@ -45,13 +45,7 @@ export default function Hero() {
       </div>
 
       <div className="relative hidden flex-1 md:block">
-        <Image
-          src="/images/hero-section/sea.webp"
-          alt="NYC skyline with boats"
-          fill
-          className="object-cover"
-          priority
-        />
+        <Image src="/images/hero-section/sea.webp" alt="" fill priority />
       </div>
     </div>
   );
