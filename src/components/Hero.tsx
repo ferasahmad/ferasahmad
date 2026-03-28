@@ -22,7 +22,7 @@ export default function Hero() {
                 alt="Feras Ahmad"
                 width={300}
                 height={400}
-                className="relative z-10 object-contain"
+                className="relative z-10"
                 priority
               />
             </div>
@@ -32,7 +32,7 @@ export default function Hero() {
                 alt="Feras Ahmad"
                 width={450}
                 height={600}
-                className="relative z-10 object-contain"
+                className="relative z-10"
                 priority
               />
             </div>
