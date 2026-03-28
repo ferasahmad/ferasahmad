@@ -18,7 +18,7 @@ export default function Hero() {
             />
             <div className="block lg:hidden">
               <Image
-                src="/images/hero-section/ferasahmad.png"
+                src="/images/hero-section/ferasahmad.webp"
                 alt="Feras Ahmad"
                 width={300}
                 height={400}
@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
             <div className="hidden lg:block">
               <Image
-                src="/images/hero-section/ferasahmad.png"
+                src="/images/hero-section/ferasahmad.webp"
                 alt="Feras Ahmad"
                 width={450}
                 height={600}
