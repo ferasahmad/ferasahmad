@@ -42,7 +42,12 @@ export default function Experience() {
     .concat(timelineEndColor)
     .join(", ");
   const timelineGradientHorizontal = `linear-gradient(90deg, ${timelineColors})`;
-  const timelineGradientVertical = `linear-gradient(180deg, ${timelineColors})`;
+  const timelineColorsMobile = [...experiences]
+    .reverse()
+    .map((exp) => exp.color)
+    .concat(timelineEndColor)
+    .join(", ");
+  const timelineGradientVerticalMobile = `linear-gradient(180deg, ${timelineColorsMobile})`;
 
   return (
     <section className="flex justify-center bg-bg-primary p-8 md:p-12 lg:items-center lg:h-screen lg:p-16 lg:px-32 text-black">
@@ -71,9 +76,9 @@ export default function Experience() {
         <div className="relative pl-8 md:pl-0">
           <div
             className="absolute left-1 top-0 bottom-0 w-[4px] rounded-full md:hidden"
-            style={{ background: timelineGradientVertical }}
+            style={{ background: timelineGradientVerticalMobile }}
           />
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-16">
+          <div className="flex flex-col-reverse gap-12 md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-16">
             {experiences.map((exp) => (
               <article
                 key={`${exp.company}-${exp.period}`}

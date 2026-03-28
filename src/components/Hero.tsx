@@ -2,9 +2,24 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="flex h-screen">
-      <div className="flex flex-1 flex-col items-center justify-center bg-bg-primary p-8 md:p-0">
-        <div className="relative">
+    <div className="relative flex h-screen overflow-hidden">
+      <div className="absolute inset-0 z-0 md:left-1/2" aria-hidden>
+        <Image
+          src="/images/hero-section/sea.webp"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+          sizes="(max-width: 767px) 100vw, 50vw"
+        />
+      </div>
+
+      <div className="relative z-10 flex flex-1 flex-col items-center justify-center overflow-hidden p-8 md:bg-bg-primary md:p-0">
+        <div
+          className="absolute inset-0 bg-bg-primary/80 md:hidden"
+          aria-hidden
+        />
+        <div className="relative z-10 flex flex-col items-center justify-center">
           <div className="relative inline-block">
             <div
               className="absolute z-0 bg-accent hidden md:block"
@@ -26,16 +41,17 @@ export default function Hero() {
               priority
             />
           </div>
-        </div>
-        <div className="flex text-center w-[300px] lg:w-[450px] items-center justify-between">
-          <h1 className="text-xl lg:text-2xl text-black">FERAS AHMAD</h1>
-          <p className="text-xl lg:text-2xl text-black">SOFTWARE ENGINEER</p>
+          <div className="flex w-[300px] items-center justify-between text-center lg:w-[450px]">
+            <h1 className="text-xl text-black lg:text-2xl">FERAS AHMAD</h1>
+            <p className="text-xl text-black lg:text-2xl">SOFTWARE ENGINEER</p>
+          </div>
         </div>
       </div>
 
-      <div className="relative hidden flex-1 md:block">
-        <Image src="/images/hero-section/sea.webp" alt="" fill priority />
-      </div>
+      <div
+        className="relative z-10 hidden min-w-0 flex-1 md:block"
+        aria-hidden
+      />
     </div>
   );
 }
