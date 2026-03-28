@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="flex flex-1 flex-col items-center justify-center bg-bg-primary p-8 md:p-0">
         <div className="relative">
           <div className="relative inline-block">
-            {/* <div
+            <div
               className="absolute z-0 bg-accent hidden md:block"
               style={{
                 top: "-20px",
@@ -15,15 +15,27 @@ export default function Hero() {
                 height: "100%",
                 opacity: 0.3,
               }}
-            /> */}
-            <Image
-              src="/images/hero-section/ferasahmad.webp"
-              alt="Feras Ahmad"
-              width={300}
-              height={400}
-              className="relative z-10"
-              priority
             />
+            <div className="block lg:hidden">
+              <Image
+                src="/images/hero-section/ferasahmad.webp"
+                alt="Feras Ahmad"
+                width={300}
+                height={400}
+                className="relative z-10"
+                priority
+              />
+            </div>
+            <div className="hidden lg:block">
+              <Image
+                src="/images/hero-section/ferasahmad.webp"
+                alt="Feras Ahmad"
+                width={450}
+                height={600}
+                className="relative z-10"
+                priority
+              />
+            </div>
           </div>
         </div>
         <div className="flex text-center w-[300px] lg:w-[450px] items-center justify-between">
