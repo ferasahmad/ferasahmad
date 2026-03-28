@@ -5,7 +5,7 @@ export default function Hero() {
     <div className="flex h-screen">
       <div className="flex flex-1 flex-col items-center justify-center bg-bg-primary p-8 md:p-0">
         <div className="relative">
-          {/* <div className="relative inline-block">
+          <div className="relative inline-block">
             <div
               className="absolute z-0 bg-accent hidden md:block"
               style={{
@@ -18,7 +18,7 @@ export default function Hero() {
             />
             <div className="block lg:hidden">
               <Image
-                src="/images/hero-section/ferasahmad.webp"
+                src="/images/hero-section/sea.webp"
                 alt="Feras Ahmad"
                 width={300}
                 height={400}
@@ -28,7 +28,7 @@ export default function Hero() {
             </div>
             <div className="hidden lg:block">
               <Image
-                src="/images/hero-section/ferasahmad.webp"
+                src="/images/hero-section/sea.webp"
                 alt="Feras Ahmad"
                 width={450}
                 height={600}
@@ -36,7 +36,7 @@ export default function Hero() {
                 priority
               />
             </div>
-          </div> */}
+          </div>
         </div>
         <div className="flex text-center w-[300px] lg:w-[450px] items-center justify-between">
           <h1 className="text-xl lg:text-2xl text-black">FERAS AHMAD</h1>
