@@ -16,23 +16,23 @@ export default function Hero() {
                 opacity: 0.3,
               }}
             />
-            <div className="block lg:hidden">
+            <div className="relative z-10 block aspect-3/4 w-[300px] lg:hidden">
               <Image
                 src="/images/hero-section/me.png"
                 alt="Feras Ahmad"
-                width={300}
-                height={400}
-                className="relative z-10"
+                fill
+                className="object-contain object-center"
+                sizes="300px"
                 priority
               />
             </div>
-            <div className="hidden lg:block">
+            <div className="relative z-10 hidden aspect-3/4 w-[450px] lg:block">
               <Image
                 src="/images/hero-section/me.png"
                 alt="Feras Ahmad"
-                width={450}
-                height={600}
-                className="relative z-10"
+                fill
+                className="object-contain object-center"
+                sizes="450px"
                 priority
               />
             </div>
