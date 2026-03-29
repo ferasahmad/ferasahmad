@@ -28,7 +28,7 @@ const experiences = [
   {
     company: "Ohara",
     period: "2024–2026",
-    color: "#7c3aed",
+    color: "#4e2678",
     technologies: ["Next.js", "TypeScript", "React Native", "Expo"],
     description:
       "Built core features for an AI-powered app generation platform using Next.js, React Native, and TypeScript, enabling non-technical users to create web apps seamlessly. Drove measurable gains in user adoption, retention, and conversion.",
@@ -45,7 +45,7 @@ export default function Experience() {
   const timelineColorsMobile = [...experiences]
     .reverse()
     .map((exp) => exp.color)
-    .concat(timelineEndColor)
+    .concat("#0c2375")
     .join(", ");
   const timelineGradientVerticalMobile = `linear-gradient(180deg, ${timelineColorsMobile})`;
 
@@ -78,14 +78,14 @@ export default function Experience() {
             className="absolute left-1 top-0 bottom-0 w-[4px] rounded-full md:hidden"
             style={{ background: timelineGradientVerticalMobile }}
           />
-          <div className="flex flex-col-reverse gap-12 md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-16">
+          <div className="flex flex-col-reverse gap-14 md:grid md:grid-cols-2 lg:grid-cols-4 lg:gap-16">
             {experiences.map((exp) => (
               <article
                 key={`${exp.company}-${exp.period}`}
-                className="min-w-0 relative"
+                className="min-w-0 relative "
               >
                 <span
-                  className="absolute -left-[1.9rem] top-2 h-3 w-3 rounded-full md:hidden"
+                  className="absolute -left-8 h-3 w-3 rounded-full md:hidden"
                   style={{ backgroundColor: exp.color }}
                 />
                 <h4
