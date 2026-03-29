@@ -22,7 +22,7 @@ export default function Hero() {
         <div className="relative z-10 flex flex-col items-center justify-center">
           <div className="relative inline-block">
             <div
-              className="absolute z-0 bg-accent hidden md:block"
+              className="absolute z-0 bg-green-950 hidden md:block"
               style={{
                 top: "-20px",
                 right: "20px",
