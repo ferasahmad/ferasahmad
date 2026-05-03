@@ -4,7 +4,7 @@ const introText =
   "Hi I'm Feras and I like to build software. I've worked on fintech apps, content creator tools, and AI-driven products, but what I care about most is making complex ideas feel simple through thoughtful design and engineering.";
 
 const hobbiesText =
-  "When I'm not coding, you can find me doing some photography, hiking, snowboarding, and sometimes, just sometimes, reading.";
+  "When I'm not coding, you can find me doing some photography, hiking, or snowboarding.";
 
 export default function About() {
   return (
